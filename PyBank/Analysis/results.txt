@@ -1,0 +1,13 @@
+Financial Analysis
+-------------------------------
+
+monthCount = 86
+
+runningProfit = $38,382,578.00
+
+avgProfitChange = $446,309.05
+
+maxProfit = Feb-2012: $1,170,593.00
+
+maxlosses = Sep-2013: $-1,196,225.00
+
