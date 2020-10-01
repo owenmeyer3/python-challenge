@@ -24,7 +24,6 @@ with open(readPath, 'r', newline = '') as csvFile:
         if row[0] != '':
             #store votedId, county and candidate from csv
             voterID = int(row[0])
-            county = row[1]
             candidate = row[2]
             
             #count votes
