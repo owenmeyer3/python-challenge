@@ -5,7 +5,7 @@ import csv
 readPath = '/Users/Owen/Desktop/DSV/_HW_Repos/python_challenge/PyBank/Resources/budget_data.csv'
 writePath = '/Users/Owen/Desktop/DSV/_HW_Repos/python_challenge/PyBank/Analysis/results.txt'
 
-#initializa variables and arrays
+#initialize variables and arrays
 monthCount = 0
 isHeader = True
 runningProfit = 0.00
@@ -21,8 +21,9 @@ with open(readPath, 'r', newline = '') as csvFile:
     csvReader = csv.reader(csvFile, delimiter = ',')
 
     for row in csvReader:
-        #do not calculate on header row
+        #store but do not calculate on header row
         if isHeader:
+            headerRow = row
             isHeader = False
             continue
         #calculate for-non blank rows
@@ -57,6 +58,7 @@ with open(readPath, 'r', newline = '') as csvFile:
             break
         
 #print result to console
+print(row)
 print('\nFinancial Analysis\n-------------------------------')
 print('\nmonthCount = ' + str(monthCount) + '\n')
 print('runningProfit = ' + "${:,.2f}".format(runningProfit) + '\n')

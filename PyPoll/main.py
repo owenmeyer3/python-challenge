@@ -16,8 +16,9 @@ with open(readPath, 'r', newline = '') as csvFile:
     csvReader = csv.reader(csvFile, delimiter = ',')
 
     for row in csvReader:
-        #do not calculate on header row
+        #stores but does not calculate on header row
         if isHeader:
+            headerRow = row
             isHeader = False
             continue
         #calculate for-non blank rows
