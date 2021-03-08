@@ -13,8 +13,10 @@
 * displays results in the console
 * writes the results to results.txt
 
+![](images/capture0.png)
 
-pyPoll is a script that gives a summary of data found from the voters and candidates of an election
+
+## pyPoll is a script that gives a summary of data found from the voters and candidates of an election
 * stores the header row of the csv data file
 * counts all votes as count of the rows
 * counts the votes for each candidate
@@ -22,3 +24,5 @@ pyPoll is a script that gives a summary of data found from the voters and candid
 * finds the maximum votes for any candidate with the candidate name (Winner of the election)
 * displays results in the console
 * writes the results to results.txt
+
+![](images/capture.png)
